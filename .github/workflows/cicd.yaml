@@ -8,6 +8,5 @@
   uses: docker/build-push-action@v5
   with:
     context: .
-    file: ./Dockerfile
     push: true
     tags: zainabtech18/devsecops-app:latest
