@@ -13,10 +13,8 @@ spec:
         app: devsecops-app
     spec:
       containers:
-      - name: web
-        image: ghcr.io/<user>/devsecops-app:latest
-        imagePullPolicy: Always
+      - name: devsecops-container
+        # Yahan apna asli DockerHub username likhna hai
+        image: zainabtech18/devsecops-final:latest 
         ports:
-        - containerPort: 3000
-      imagePullSecrets:
-      - name: ghcr-secret
+        - containerPort: 5000
