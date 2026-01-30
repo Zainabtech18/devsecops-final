@@ -6,6 +6,7 @@ spec:
   selector:
     app: devsecops-app
   ports:
-  - port: 3000
-    targetPort: 3000
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
   type: NodePort
