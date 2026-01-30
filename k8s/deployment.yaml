@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: devsecops-container
-        # Yahan apna asli DockerHub username likhna hai
         image: zainabtech18/devsecops-final:latest 
         ports:
-        - containerPort: 5000
+        - containerPort: 3000
