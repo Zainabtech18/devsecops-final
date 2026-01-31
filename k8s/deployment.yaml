@@ -13,7 +13,10 @@ spec:
         app: devsecops-app
     spec:
       containers:
-      - name: devsecops-container
-        image: zainabtech18/devsecops-final:latest 
+      - name: web
+        image: ghcr.io/<user>/devsecops-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+      - name: ghcr-secret
